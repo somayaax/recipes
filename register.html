@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="home.html">
+                <i class="fa-solid fa-utensils"></i> Recipes</a>
+        </div>
+        <i class="menu fa-solid fa-bars" onclick="viewMenu()"></i>
+        <ul id="navbar">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="table.html">Recipes</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a class="active" href="#">Regsiter</a></li>
+        </ul>
+    </nav>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script>
+        function viewMenu() {
+            $("#navbar").toggleClass("show");
+        }
+        let slideIndex = 0;
+    </script>
+</body>
+
+</html>

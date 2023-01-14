@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #131B23;
+}
+
+nav .logo {
+    display: inline-block;
+    padding: 1.3rem 2rem;
+}
+
+nav .logo a {
+    letter-spacing: 3px;
+    color: #E9F1F7;
+}
+
+nav ul {
+    position: absolute;
+    right: 1rem;
+    display: inline-block;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 1.3rem 1.8rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: #E9F1F7;
+    font-size: 1.3rem;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.5s ease-in-out 0s;
+    -webkit-transition: color 0.5s ease-in-out 0s;
+    -moz-transition: color 0.5s ease-in-out 0s;
+    -ms-transition: color 0.5s ease-in-out 0s;
+    -o-transition: color 0.5s ease-in-out 0s;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    background-color: #E9F1F7;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out 0s;
+    -webkit-transition: all 0.5s ease-in-out 0s;
+    -moz-transition: all 0.5s ease-in-out 0s;
+    -ms-transition: all 0.5s ease-in-out 0s;
+    -o-transition: all 0.5s ease-in-out 0s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    visibility: visible;
+    width: 100%;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: #E9F1F7;
+}
+
+nav .menu {
+    text-align: right;
+    font-size: 1.5rem;
+    top: 1.3rem;
+    color: #E9F1F7;
+    position: absolute;
+    right: 2rem;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    nav ul {
+        position: static;
+        display: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul li {
+        display: block;
+    }
+
+    nav .menu {
+        display: block;
+    }
+
+    .show {
+        display: block;
+    }
+}
