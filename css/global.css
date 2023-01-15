@@ -13,6 +13,8 @@ nav {
     position: sticky;
     top: 0;
     background-color: #131B23;
+    z-index: 1;
+    box-shadow: 1px 20px 38px -2px rgba(0,0,0,0.62);
 }
 
 nav .logo {

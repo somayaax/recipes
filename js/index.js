@@ -4,6 +4,7 @@ function viewMenu () {
 }
 let slideIndex = 0;
 showSlides();
+
 function showSlides() {
     let slides = document.getElementsByClassName("mySlides");
     for (let i = 0; i < slides.length; i++) {

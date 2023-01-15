@@ -1,0 +1,99 @@
+@import 'global.css';
+@import 'font-awesome.min.css';
+
+body {
+    background-color: #131B23;
+    color: #fff;
+    /* background-color: #a0a0a0; */
+    /* color: #131B23; */
+}
+
+.container {
+    max-width: 90%;
+    margin: 5rem auto;
+
+}
+
+.recipe-img {
+    width: 50%;
+    float: left;
+}
+
+.recipe-img img {
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.recipe-desc {
+    width: 50%;
+    float: left;
+    padding: 0 2rem;
+}
+
+.recipe-desc h1 {
+    margin-top: 0;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.recipe-desc p {
+    color: #cfcbcb;
+    text-align: center;
+    letter-spacing: 0.5px;
+}
+
+.recipe-desc .ingredients,
+.recipe-desc .directions {
+    width: 50%;
+    float: left;
+}
+
+.recipe-desc h2 {
+    font-weight: 500;
+    /* color: #a0a0a0; */
+}
+
+.recipe-desc ul {
+    padding-left: 0;
+}
+
+.recipe-desc li {
+    list-style-type: none;
+    margin: 0.5rem 0;
+    color: #cfcbcb;
+
+}
+
+.clr {
+    clear: both;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .recipe-desc,
+    .recipe-img {
+        width: 100%;
+        margin: 1.3rem 0;
+    }
+
+    .recipe-desc .ingredients,
+    .recipe-desc .directions {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+
+    .recipe-desc,
+    .recipe-img {
+        width: 100%;
+        margin: 1.3rem 0;
+    }
+}
+
+@media only screen and (min-width: 1200px) {}
