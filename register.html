@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/contact.css">
 </head>
 
 <body>
@@ -21,10 +21,40 @@
             <li><a href="contact.html">Contact us</a></li>
             <li><a href="table.html">Recipes</a></li>
             <li><a href="login.html">Login</a></li>
-            <li><a class="active" href="#">Regsiter</a></li>
+            <li><a class="active" href="register.html">Regsiter</a></li>
         </ul>
     </nav>
+    <div class="container">
+        <div class="overlay"></div>
+        <div class="center-form">
+            <form>
+                <i class="fa-regular fa-user"></i>
+                                <label for="firstName">FirstName</label>
+                <input type="text" required id="firstName" placeholder="">
 
+                <label for="lastName">LastName</label>
+                <input type="text" required id="lastName" placeholder="">
+                <br>
+                <label for="gender">Gender </label>
+                <br>
+                <input type="radio" id="male" name="gender">male
+                <input type="radio" id="female" name="gender">female
+                <br>
+                <label for="email">Email</label>
+                <input type="email" required id="email" placeholder="">
+
+                <label for="UserName">UserName</label>
+                <input type="text" required id="UserName" placeholder="">
+
+                <label for="password">Password</label>
+                <input type="password" required id="password">
+                <div style="width: fit-content; margin: auto;">
+                    <button type="submit">Register</button>
+
+                </div>
+            </form>
+        </div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script>

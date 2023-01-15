@@ -1,2 +1,99 @@
 @import 'global.css';
 @import 'font-awesome.min.css';
+
+.container {
+    /* background-image: url(../img/bg.webp); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: #131B23;
+    height: 94vh;
+    position: relative;
+}
+
+.overlay {
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+}
+
+.center-form {
+    background-color: #fff;
+    box-shadow: 1px 20px 38px -2px rgba(0, 0, 0, 0.62);
+    position: absolute;
+    border-radius: 50px;
+    top: 50%;
+    width: 30%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+form {
+    padding: 1rem 5rem 3rem;
+}
+
+form i {
+    margin: 0 calc(50% - 35px - 8px) 3rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    background-color: #131B23;
+    /*color: #131b23;
+    */
+    color: #fff;
+    border: 1px solid #131B23;
+    padding: 1rem;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 0.2px solid grey;
+}
+
+form input[type=radio] {
+    width: 10px;
+}
+
+form button {
+    border: 1px solid #131B23;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 0.4rem 2rem;
+}
+
+form button:hover {
+    background-color: #131B23;
+    color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+    .center-form {
+        width: 90%;
+        margin: 1.3rem 0;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .center-form {
+        width: 70%;
+        margin: 1.3rem 0;
+    }
+}
