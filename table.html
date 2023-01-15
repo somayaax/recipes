@@ -19,14 +19,63 @@
         <ul id="navbar">
             <li><a href="home.html">Home</a></li>
             <li><a href="contact.html">Contact us</a></li>
-            <li><a class="active" href="#">Recipes</a></li>
+            <li><a class="active" href="#">Chefs</a></li>
             <li><a href="login.html">Login</a></li>
             <li><a href="register.html">Regsiter</a></li>
         </ul>
     </nav>
 
+    <div class="container" style="text-align: center;">
 
-    <script src="js/jquery.min.js"></script>
+        <div>
+            <img src="./img/c.png" alt="">
+            <h1 style="margin-top: 0;">CHEFS</h1>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Chef</th>
+                    <th>Recipes</th>
+                    <th>Country</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Lina</td>
+                    <td>42</td>
+                    <td>Spain</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Hagar</td>
+                    <td>30</td>
+                    <td>Greece</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Somaya</td>
+                    <td>14</td>
+                    <td>Italy</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Hayah</td>
+                    <td>39</td>
+                    <td>Morocco</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Nada</td>
+                    <td>39</td>
+                    <td>France</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="js/jquery.min.js"> </script>
     <script>
         function viewMenu() {
             $("#navbar").toggleClass("show");

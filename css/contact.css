@@ -2,20 +2,20 @@
 @import 'font-awesome.min.css';
 
 .container {
-    /* background-image: url(../img/bg.webp); */
+    background-image: url(../img/bg.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     /* background-color: #131B23; */
-    background-color: #cfcbcb;
+    /* background-color: #cfcbcb; */
     height: 94vh;
     position: relative;
 }
 
-.overlay {
+/* .overlay {
     height: 100%;
-    /* background-color: rgba(0, 0, 0, 0.6); */
-}
+    background-color: rgba(0, 0, 0, 0.6);
+} */
 
 .center-form {
     background-color: #fff;
@@ -42,18 +42,18 @@ form {
 }
 
 form i {
-    margin: 0 calc(50% - 35px - 8px) 3rem;
+    margin: 1rem calc(50% - 35px - 8px) 3rem;
     border-radius: 50%;
+    font-size: 1.8rem;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
     -o-border-radius: 50%;
     background-color: #131B23;
     /*color: #131b23;
-    */
-    color: #fff;
+    */color: #fff;
     border: 1px solid #131B23;
-    padding: 1rem;
+    padding: 1.6rem;
 }
 
 form input,
@@ -91,9 +91,12 @@ form button:hover {
         width: 90%;
         margin: 1.3rem 0;
     }
+    form{
+        padding: 3rem ;
+    }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1000px) {
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
     .center-form {
         width: 70%;
         margin: 1.3rem 0;

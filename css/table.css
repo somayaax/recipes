@@ -1,2 +1,47 @@
 @import 'global.css';
 @import 'font-awesome.min.css';
+
+.container {
+    background-color: #cfcbcb;
+    height: 94vh;
+    position: relative;
+}
+
+table {
+    /*padding: 2rem;
+    */box-shadow: 1px 20px 38px -2px rgba(0, 0, 0, 0.62);
+    background-color: #fff;
+    position: absolute;
+    border-radius: 0px;
+    top: 50%;
+    width: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    -webkit-transform: translate(50%, -50%);
+    -moz-transform: translate(50%, -50%);
+    -ms-transform: translate(50%, -50%);
+    -o-transform: translate(50%, -50%);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    -ms-border-radius: 0px;
+    -o-border-radius: 0px;
+}
+
+table td {
+    text-align: center;
+    border-right: 1px solid #131B23;
+}
+
+th {
+    border: 1px solid #131B23;
+    background-color: #131B23;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.4rem;
+}
+@media only screen and (max-width: 600px) {
+    table {
+        width: 90%;
+        margin: 1.3rem 0;
+    }
+}

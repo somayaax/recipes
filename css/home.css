@@ -72,13 +72,14 @@
 .featured-item .img-desc {
     padding: 0 1rem 1rem;
 }
-.featured-item .img-desc h2 a{
+.featured-item .img-desc h2{
     color: #131B23;
     text-decoration: none;
     text-transform: capitalize;
 }
 
 .featured-item .img-desc p {
+    color: #131B23;
     letter-spacing: 0.5px;
     text-align: left;
 }
