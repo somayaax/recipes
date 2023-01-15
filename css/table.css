@@ -3,28 +3,22 @@
 
 .container {
     background-color: #cfcbcb;
-    height: 94vh;
+    /* background-color: #ede6db; */
     position: relative;
+    padding-bottom: 3rem;
 }
 
 table {
-    /*padding: 2rem;
-    */box-shadow: 1px 20px 38px -2px rgba(0, 0, 0, 0.62);
+    box-shadow: 1px 20px 38px -2px rgba(0, 0, 0, 0.62);
     background-color: #fff;
-    position: absolute;
     border-radius: 0px;
-    top: 50%;
     width: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    -webkit-transform: translate(50%, -50%);
-    -moz-transform: translate(50%, -50%);
-    -ms-transform: translate(50%, -50%);
-    -o-transform: translate(50%, -50%);
+    margin: auto;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
     -ms-border-radius: 0px;
     -o-border-radius: 0px;
+    padding-bottom: 2rem;
 }
 
 table td {
@@ -39,9 +33,27 @@ th {
     font-weight: 400;
     font-size: 1.4rem;
 }
+
+table,
+td,
+tr,
+th {
+    border-collapse: collapse;
+    padding: 1.4rem;
+}
+
 @media only screen and (max-width: 600px) {
     table {
         width: 90%;
-        margin: 1.3rem 0;
+        margin: 1.3rem auto;
     }
+
+    table,
+    td,
+    tr,
+    th {
+        border-collapse: collapse;
+        padding: 0.4rem;
+    }
+
 }

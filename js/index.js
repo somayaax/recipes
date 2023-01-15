@@ -2,16 +2,14 @@
 function viewMenu () {
     $("#navbar").toggleClass("show");
 }
-let slideIndex = 0;
-showSlides();
 
+let count = 0;
+showSlides();
 function showSlides() {
     let slides = document.getElementsByClassName("mySlides");
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
+    $('.mySlides').css('display','none');
+    count++;
+    if (count > slides.length) { count = 1 }
+    slides[count - 1].style.display = "block";
     setTimeout(showSlides, 2300);
-}
+};

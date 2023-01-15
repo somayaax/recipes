@@ -13,7 +13,10 @@
     <nav>
         <div class="logo">
             <a href="home.html">
-                <i class="fa-solid fa-utensils"></i> Recipes</a>
+                <img src="./img/logo.png" width="50px" alt="">
+                <!-- <i class="fa-solid fa-utensils"></i> -->
+                <span>Recipes</span>
+            </a>
         </div>
         <i class="menu fa-solid fa-bars" onclick="viewMenu()"></i>
         <ul id="navbar">
@@ -59,7 +62,12 @@
         </div>
         <div class="clr"></div>
     </div>
-
+    <script src="js/jquery.min.js"> </script>
+    <script>
+        function viewMenu() {
+            $("#navbar").toggleClass("show");
+        }
+    </script>
 </body>
 
 </html>

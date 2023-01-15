@@ -8,6 +8,9 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none;
+}
 nav {
     position: sticky;
     top: 0;
@@ -18,7 +21,10 @@ nav {
 
 nav .logo {
     display: inline-block;
-    padding: 1.3rem 2rem;
+    padding: 0.8rem 2rem 0.4rem;
+}
+nav .logo img, nav .logo span{
+    vertical-align: middle;
 }
 
 nav .logo a {
@@ -90,6 +96,43 @@ nav .menu {
     display: none;
 }
 
+footer {
+    background-color: #131B23;
+}
+
+footer .about,
+footer .social,
+footer .text {
+    width: 33%;
+    padding: 1rem 5rem;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+footer h3 {
+    color: #E9F1F7;
+    font-weight: normal;
+}
+
+footer .about p {
+    font-weight: 200;
+    color: #a1a1a1;
+}
+
+footer .social i {
+    color: #a1a1a1;
+    padding: 0 1rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+footer ul {
+    list-style-type: none;
+    color: #a1a1a1;
+    padding-left: 0;
+}
+
 @media only screen and (max-width: 768px) {
     nav ul {
         position: static;
@@ -108,5 +151,22 @@ nav .menu {
 
     .show {
         display: block;
+    }
+
+    footer .about,
+    footer .social,
+    footer .text {
+        width: 100%;
+        padding: 1rem 3rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) and (min-width: 769px) {
+
+    footer .about,
+    footer .social,
+    footer .text {
+        width: 30%;
+        padding: 1rem;
     }
 }

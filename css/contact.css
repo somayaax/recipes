@@ -6,35 +6,22 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    /* background-color: #131B23; */
-    /* background-color: #cfcbcb; */
-    height: 94vh;
-    position: relative;
+    padding: 8rem 0;
 }
 
-/* .overlay {
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-} */
 
 .center-form {
     background-color: #fff;
-    border:1px solid #131B23;
+    border: 1px solid #131B23;
     box-shadow: 1px 20px 38px -2px rgba(0, 0, 0, 0.62);
-    position: absolute;
     border-radius: 50px;
-    top: 50%;
     width: 30%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    -webkit-transform: translate(50%, -50%);
-    -moz-transform: translate(50%, -50%);
-    -ms-transform: translate(50%, -50%);
-    -o-transform: translate(50%, -50%);
+    margin: auto;
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
+    -webkit-border-radius: 50px;
 }
 
 form {
@@ -51,7 +38,8 @@ form i {
     -o-border-radius: 50%;
     background-color: #131B23;
     /*color: #131b23;
-    */color: #fff;
+    */
+    color: #fff;
     border: 1px solid #131B23;
     padding: 1.6rem;
 }
@@ -59,12 +47,20 @@ form i {
 form input,
 form textarea {
     width: 100%;
+    border-radius: 5px;
     margin-bottom: 1rem;
     border: 0.2px solid grey;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
-
+form input{
+    height: 1.6rem;
+}
 form input[type=radio] {
     width: 10px;
+    height: 10px;
 }
 
 form button {
@@ -89,16 +85,17 @@ form button:hover {
 @media only screen and (max-width: 600px) {
     .center-form {
         width: 90%;
-        margin: 1.3rem 0;
+        margin: 1.3rem auto;
     }
-    form{
-        padding: 3rem ;
+
+    form {
+        padding: 3rem;
     }
 }
 
 @media only screen and (min-width: 600px) and (max-width: 1200px) {
     .center-form {
         width: 70%;
-        margin: 1.3rem 0;
+        margin: 1.3rem auto;
     }
 }
